@@ -15,11 +15,17 @@
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftndvwydl9j217e0q27fo.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnhi1b3pyj20ho06sglt.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnihhqucnj20n10ejgmj.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnhvh2od7j20va04w3yp.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftniuetlsmj20sy04w0sx.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni7e00qxj20ol0a1dge.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni3nbmj2j20wd05i3zh.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni8ot2rij20tq09jt97.jpg">
-<meta property="og:updated_time" content="2018-07-26T12:09:05.724Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnix8f0tej20o40id0tw.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftniz82y9nj215j0u07ce.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnj5mikpij20x90cuq46.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnj7t7rnrj20g002tjre.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnjjqkj6ij20ae0573yc.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnjohf6bxj21700u0wq5.jpg">
+<meta property="og:updated_time" content="2018-07-26T12:41:20.327Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + Github 打造个人博客">
 <meta name="twitter:description" content="在知乎上看到一个作者的个人博客非常惊艳，尤其是点击的动作很炫酷，因此产生了定制一个私人博客的想法。千里之行始于足下！ 准备工具： Hexo + GithubHexoHexo具有非常好的特点来建立博客,借用官网所言： 超快速度Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染. 支持Markdown语言Hexo 支持 GitHub Flavored Markdown 的所有功能，">
@@ -109,10 +115,10 @@
 </blockquote>
 <p>之后利用npm安装hexo，在Git Bash输入(也可以在控制台cmd中输入)：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<h2 id="建立博客"><a href="#建立博客" class="headerlink" title="建立博客"></a>建立博客</h2><p>打开你想存放博客的文件夹，我的是 <code>D:\Website</code>,然后右键打开Git Bash,输入指令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo i blog     <span class="comment">#在当前目录初始化一个blog项目，并建立一个blog文件夹</span></span><br><span class="line"><span class="built_in">cd</span> blog         <span class="comment">#进入blog的根目录</span></span><br><span class="line">hexo g          <span class="comment">#生成网站静态文件到默认设置的public 文件夹</span></span><br><span class="line">hexo s          <span class="comment">#将blog部署到本地服务器，用于预览主题。</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="建立本地博客"><a href="#建立本地博客" class="headerlink" title="建立本地博客"></a>建立本地博客</h2><p>打开你想存放博客的文件夹，我的是 <code>D:\Website</code>,然后右键打开Git Bash,输入指令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo i blog     <span class="comment">#在当前目录初始化一个blog项目，并建立一个blog文件夹</span></span><br><span class="line"><span class="built_in">cd</span> blog         <span class="comment">#进入blog的根目录</span></span><br><span class="line">hexo g          <span class="comment">#生成网站静态文件到默认设置的public 文件夹</span></span><br><span class="line">hexo s          <span class="comment">#将blog部署到本地服务器，用于预览主题。</span></span><br></pre></td></tr></table></figure></p>
 <p>这样我们就初始化了一个简单的博客，并且将其部署到了本地服务器，默认地址是: <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 。在某些情况下（打开了福昕阅读器）,端口4000可能会被占用,此时可以选择重新设置端口：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -p 5000 s</span><br></pre></td></tr></table></figure></p>
 <p>这样本地博客的地址就变成了：<a href="http://localhost:5000/" target="_blank" rel="noopener">http://localhost:5000/</a><br>打开浏览器，输入地址预览博客：<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftndvwydl9j217e0q27fo.jpg" alt=""><br>看到这个样子就成功了,这个是hexo默认的主题<code>landscape</code>,在下一篇文章中我们会写到怎么配置自己的博客主题。</p>
-<h2 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h2><ol>
+<h2 id="建立GitHub-Pages"><a href="#建立GitHub-Pages" class="headerlink" title="建立GitHub Pages"></a>建立GitHub Pages</h2><ol>
 <li><p>首先，你需要一个GitHub账号：</p>
 <blockquote>
 <p><a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>  </p>
@@ -125,20 +131,37 @@
 <blockquote>
 <p>LukeZy项目的域名：<a href="https://lukezy.github.io/" target="_blank" rel="noopener">https://lukezy.github.io/</a><br>hustzy项目的域名：<a href="https://lukezy.github.io/hustzy.github.io/" target="_blank" rel="noopener">https://lukezy.github.io/hustzy.github.io/</a></p>
 <ol start="4">
-<li>点击Settings,创建pagese<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnhvh2od7j20va04w3yp.jpg" alt=""><br>拉到下面<code>GitHub Pages</code>,点击Choose a theme<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni7e00qxj20ol0a1dge.jpg" alt=""><br>任意选择一个主题，反正最后会被覆盖<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni3nbmj2j20wd05i3zh.jpg" alt=""><br>跳转之后，拉到最下方保存设置<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni8ot2rij20tq09jt97.jpg" alt=""></li>
+<li>点击<code>Settings</code>,创建pagese<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftniuetlsmj20sy04w0sx.jpg" alt=""><br>拉到下面<code>GitHub Pages</code>,点击Choose a theme<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni7e00qxj20ol0a1dge.jpg" alt=""><br>任意选择一个主题，反正最后会被覆盖<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni3nbmj2j20wd05i3zh.jpg" alt=""><br>跳转之后，拉到最下方保存设置<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni8ot2rij20tq09jt97.jpg" alt=""></li>
 </ol>
 </blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<ol start="5">
+<li>再次进入<code>Settings</code>，拉到<code>GitHub Pages</code><br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnix8f0tej20o40id0tw.jpg" alt=""><br>点击域名，进入GitHub Pages:<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftniz82y9nj215j0u07ce.jpg" alt=""></li>
+</ol>
+<h2 id="将本地博客部署到Github"><a href="#将本地博客部署到Github" class="headerlink" title="将本地博客部署到Github"></a>将本地博客部署到Github</h2><ol>
+<li>进入刚刚建立的项目,复制项目地址：<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnj5mikpij20x90cuq46.jpg" alt=""></li>
+</ol>
+<p>需要注意的是,GitHub项目有两种连接方式:</p>
+<blockquote>
+<p>-HTTPS 每次上传到仓库都需要输入账号密码<br>-SSH: 不用每次上传输入账号密码，但需要配置SSH Key</p>
+</blockquote>
+<p>在这里我们使用<code>-SSH</code>的连接方式，配置SSH Key的方式请参考<a href="http://beiyuu.com/github-pages" target="_blank" rel="noopener">SSH Key</a>。</p>
+<ol start="2">
+<li><p>修改hexo站点的配置文件<code>_config.yml</code><br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnj7t7rnrj20g002tjre.jpg" alt=""><br>注意这里deploy和type不是对齐的，有一个缩进。</p>
+</li>
+<li><p>下载部署插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在站点根目录<code>Git Bash</code>输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>回车之后会弹出一个对话框让你输入passphrase：<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnjjqkj6ij20ae0573yc.jpg" alt=""><br>输入配置<code>SSH Key</code>设置的passphrase，回车即可成功部署本地博客到GitHub！<br>在浏览器输入username.github.io就可以看到你的博客啦，如：<a href="https://lukezy.github.io/hustzy.github.io/" target="_blank" rel="noopener">https://lukezy.github.io/hustzy.github.io/</a><br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnjohf6bxj21700u0wq5.jpg" alt=""></p>
+<p>5.以后的部署就是三步走了：<br><code>`</code>bash<br>$ hexo clean<br>$ hexo g<br>$ hexo d</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/24/hello-world/" data-id="cjk2cno6x00005wv3dvn0lm8t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/24/hello-world/" data-id="cjk2jrjj00000lcv3mkl2i9u4" class="article-share-link">Share</a>
       
       
     </footer>
