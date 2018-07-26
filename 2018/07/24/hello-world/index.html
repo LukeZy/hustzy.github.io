@@ -25,7 +25,7 @@
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnj7t7rnrj20g002tjre.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnjjqkj6ij20ae0573yc.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnjohf6bxj21700u0wq5.jpg">
-<meta property="og:updated_time" content="2018-07-26T12:42:17.958Z">
+<meta property="og:updated_time" content="2018-07-26T12:50:53.814Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + Github 打造个人博客">
 <meta name="twitter:description" content="在知乎上看到一个作者的个人博客非常惊艳，尤其是点击的动作很炫酷，因此产生了定制一个私人博客的想法。千里之行始于足下！ 准备工具： Hexo + GithubHexoHexo具有非常好的特点来建立博客,借用官网所言： 超快速度Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染. 支持Markdown语言Hexo 支持 GitHub Flavored Markdown 的所有功能，">
@@ -107,35 +107,31 @@
 <h4 id="一键部署"><a href="#一键部署" class="headerlink" title="一键部署"></a>一键部署</h4><p>只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。</p>
 <h4 id="丰富的插件"><a href="#丰富的插件" class="headerlink" title="丰富的插件"></a>丰富的插件</h4><p>Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。</p>
 <p>在安装<code>hexo</code>之前，需要先nodejs和github</p>
-<blockquote>
-<ol>
+<ul>
 <li>nodejs下载： <a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a> </li>
 <li>github下载： <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></li>
-</ol>
-</blockquote>
+</ul>
 <p>之后利用npm安装hexo，在Git Bash输入(也可以在控制台cmd中输入)：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <h2 id="建立本地博客"><a href="#建立本地博客" class="headerlink" title="建立本地博客"></a>建立本地博客</h2><p>打开你想存放博客的文件夹，我的是 <code>D:\Website</code>,然后右键打开Git Bash,输入指令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo i blog     <span class="comment">#在当前目录初始化一个blog项目，并建立一个blog文件夹</span></span><br><span class="line"><span class="built_in">cd</span> blog         <span class="comment">#进入blog的根目录</span></span><br><span class="line">hexo g          <span class="comment">#生成网站静态文件到默认设置的public 文件夹</span></span><br><span class="line">hexo s          <span class="comment">#将blog部署到本地服务器，用于预览主题。</span></span><br></pre></td></tr></table></figure></p>
 <p>这样我们就初始化了一个简单的博客，并且将其部署到了本地服务器，默认地址是: <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 。在某些情况下（打开了福昕阅读器）,端口4000可能会被占用,此时可以选择重新设置端口：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -p 5000 s</span><br></pre></td></tr></table></figure></p>
 <p>这样本地博客的地址就变成了：<a href="http://localhost:5000/" target="_blank" rel="noopener">http://localhost:5000/</a><br>打开浏览器，输入地址预览博客：<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftndvwydl9j217e0q27fo.jpg" alt=""><br>看到这个样子就成功了,这个是hexo默认的主题<code>landscape</code>,在下一篇文章中我们会写到怎么配置自己的博客主题。</p>
 <h2 id="建立GitHub-Pages"><a href="#建立GitHub-Pages" class="headerlink" title="建立GitHub Pages"></a>建立GitHub Pages</h2><ol>
-<li><p>首先，你需要一个GitHub账号：</p>
-<blockquote>
-<p><a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>  </p>
-</blockquote>
+<li><p>首先，你需要一个GitHub账号：<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>  </p>
 </li>
 <li><p>创建一个新项目：<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnhi1b3pyj20ho06sglt.jpg" alt=""></p>
 </li>
 </ol>
 <p>3.按照格式输入项目名称：<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnihhqucnj20n10ejgmj.jpg" alt=""><br>注意这里的<code>username</code>最好是GitHub的用户名，这样可以保证blog域名的简洁性。因为我一个有一个以github用户名<code>LukeZy</code>创建的项目了，因此截图中用的是<code>hustzy</code>。两个项目名的差别在于：</p>
-<blockquote>
-<p>LukeZy项目的域名：<a href="https://lukezy.github.io/" target="_blank" rel="noopener">https://lukezy.github.io/</a><br>hustzy项目的域名：<a href="https://lukezy.github.io/hustzy.github.io/" target="_blank" rel="noopener">https://lukezy.github.io/hustzy.github.io/</a></p>
+<ul>
+<li>LukeZy项目的域名：<a href="https://lukezy.github.io/" target="_blank" rel="noopener">https://lukezy.github.io/</a></li>
+<li>hustzy项目的域名：<a href="https://lukezy.github.io/hustzy.github.io/" target="_blank" rel="noopener">https://lukezy.github.io/hustzy.github.io/</a></li>
+</ul>
 <ol start="4">
-<li>点击<code>Settings</code>,创建pagese<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftniuetlsmj20sy04w0sx.jpg" alt=""><br>拉到下面<code>GitHub Pages</code>,点击Choose a theme<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni7e00qxj20ol0a1dge.jpg" alt=""><br>任意选择一个主题，反正最后会被覆盖<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni3nbmj2j20wd05i3zh.jpg" alt=""><br>跳转之后，拉到最下方保存设置<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni8ot2rij20tq09jt97.jpg" alt=""></li>
-</ol>
-</blockquote>
-<ol start="5">
-<li>再次进入<code>Settings</code>，拉到<code>GitHub Pages</code><br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnix8f0tej20o40id0tw.jpg" alt=""><br>点击域名，进入GitHub Pages:<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftniz82y9nj215j0u07ce.jpg" alt=""></li>
+<li><p>点击<code>Settings</code>,创建pagese<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftniuetlsmj20sy04w0sx.jpg" alt=""><br>拉到下面<code>GitHub Pages</code>,点击Choose a theme<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni7e00qxj20ol0a1dge.jpg" alt=""><br>任意选择一个主题，反正最后会被覆盖<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni3nbmj2j20wd05i3zh.jpg" alt=""><br>跳转之后，拉到最下方保存设置<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftni8ot2rij20tq09jt97.jpg" alt=""></p>
+</li>
+<li><p>再次进入<code>Settings</code>，拉到<code>GitHub Pages</code><br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnix8f0tej20o40id0tw.jpg" alt=""><br>点击域名，进入GitHub Pages:<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftniz82y9nj215j0u07ce.jpg" alt=""></p>
+</li>
 </ol>
 <h2 id="将本地博客部署到Github"><a href="#将本地博客部署到Github" class="headerlink" title="将本地博客部署到Github"></a>将本地博客部署到Github</h2><ol>
 <li>进入刚刚建立的项目,复制项目地址：<br><img src="https://ws1.sinaimg.cn/large/a0fd3b2aly1ftnj5mikpij20x90cuq46.jpg" alt=""></li>
@@ -161,7 +157,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/24/hello-world/" data-id="cjk2jsnud0001i0v3elwvvems" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/24/hello-world/" data-id="cjk2k3mx00000ysv337toaign" class="article-share-link">Share</a>
       
       
     </footer>
